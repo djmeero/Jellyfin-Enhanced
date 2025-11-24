@@ -500,8 +500,8 @@
             icon = document.createElement('img');
             icon.id = 'jellyseerr-search-icon';
             icon.className = 'jellyseerr-icon';
-            icon.src = 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/jellyseerr.svg';
-            icon.alt = 'Jellyseerr';
+            icon.src = 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/requestly.svg';
+            icon.alt = 'Requests';
 
             let tapCount = 0;
             let tapTimer = null;
@@ -776,7 +776,7 @@
                 <div class="cardScalable">
                     <div class="cardPadder cardPadder-overflowPortrait"></div>
                     <div class="cardImageContainer coveredImage cardContent itemAction" style="background-image: url('${posterUrl}');">
-                        <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/jellyseerr.svg" class="jellyseerr-icon-on-card" alt="Jellyseerr"/>
+                        <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/requestly.svg" class="jellyseerr-icon-on-card" alt="Requests"/>
                         <div class="jellyseerr-elsewhere-icons"></div>
                         <div class="cardIndicators"></div>
                     </div>
