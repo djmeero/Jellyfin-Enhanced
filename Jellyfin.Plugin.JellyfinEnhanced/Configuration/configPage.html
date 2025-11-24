@@ -21,7 +21,7 @@
             <div style="margin-bottom: 1em;">
                 <button class="jellyfin-tab-button active" data-tab="enhanced" style="background: none; border: none; color: var(--primary-accent-color, #fff); cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid var(--primary-accent-color, #fff);"><h3>Enhanced Settings</h3></button>
                 <button class="jellyfin-tab-button" data-tab="elsewhere" style="background: none; border: none; color: #ccc; cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;"><h3>Elsewhere Settings</h3></button>
-                <button class="jellyfin-tab-button" data-tab="jellyseerr" style="background: none; border: none; color: #ccc; cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;"><h3><img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/jellyseerr.svg" alt="Jellyseerr" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; filter: brightness(0.8);">Jellyseerr Settings</h3></button>
+                <button class="jellyfin-tab-button" data-tab="jellyseerr" style="background: none; border: none; color: #ccc; cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;"><h3><img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/requestly.svg" alt="Requests" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; filter: brightness(0.8);">Requests Settings</h3></button>
                 <button class="jellyfin-tab-button" data-tab="arr-links" style="background: none; border: none; color: #ccc; cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;"><h3>*arr Links</h3></button>
                 <button class="jellyfin-tab-button" data-tab="extras" style="background: none; border: none; color: #ccc; cursor: pointer; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;"><h3>Other Settings</h3></button>
             </div>
@@ -282,17 +282,17 @@
                             <div class="checkboxContainer" style="margin-bottom: 0.5em !important;">
                                 <label>
                                     <input id="jellyseerrEnabled" is="emby-checkbox" type="checkbox"/>
-                                    <span>Show Jellyseerr Results in Search</span>
+                                    <span>Show Discover Results in Search</span>
                                 </label>
                             </div>
                             <div class="fieldDescription" style="margin-bottom: 2em;">Enhance Jellyfin search by showing results from Jellyseerr.<br>This allows users to discover and request missing movies and shows directly from Jellyfin.</div>
                             <div class="checkboxContainer" style="margin-bottom: 0.5em !important;">
                                 <label>
                                     <input id="jellyseerrUseJellyseerrLinks" is="emby-checkbox" type="checkbox"/>
-                                    <span>Link result titles to Jellyseerr instead of TMDB</span>
+                                    <span>Link result titles to Discover instead of TMDB</span>
                                 </label>
                             </div>
-                            <div class="fieldDescription" style="margin-bottom: 2em;">When enabled, clicking a Jellyseerr result title will open your Jellyseerr item page using the first configured Jellyseerr URL.</div>
+                            <div class="fieldDescription" style="margin-bottom: 2em;">When enabled, clicking a Discover result title will open your Discover item page using the first configured Discover URL.</div>
                             <div class="checkboxContainer" style="margin-bottom: 0.5em !important;">
                                 <label>
                                     <input id="jellyseerrEnable4kRequests" is="emby-checkbox" type="checkbox"/>
@@ -310,14 +310,14 @@
                             <div class="checkboxContainer" style="margin-bottom: 0.5em !important;">
                                 <label>
                                     <input id="showElsewhereOnJellyseerr" is="emby-checkbox" type="checkbox"/>
-                                    <span>Show Streaming Providers on Jellyseerr Posters</span>
+                                    <span>Show Streaming Providers on Discover Posters</span>
                                 </label>
                             </div>
-                            <div class="fieldDescription" style="margin-bottom: 2em;">Displays icons of available streaming services (from your default region) on Jellyseerr Posters.<br>Requires TMDB API Key to be configured in Elsewhere Settings</div>
+                            <div class="fieldDescription" style="margin-bottom: 2em;">Displays icons of available streaming services (from your default region) on Discover Posters.<br>Requires TMDB API Key to be configured in Elsewhere Settings</div>
                             <div class="inputContainer">
                                 <label class="sectionTitle" style="margin-bottom: 5px;" for="jellyseerrUrls">Jellyseerr URL(s)</label>
                                 <textarea style="display:block; height: 8vh !important;" class="emby-textarea emby-input" id="jellyseerrUrls" name="jellyseerrUrls" placeholder="http://192.168.1.10:5055&#10;https://jellyseerr.example.com"></textarea>
-                                <div class="fieldDescription">Enter your Jellyseerr instance URLs, one per line. The script will use the first one that connects successfully.</div>
+                                <div class="fieldDescription">Enter your Discover instance URLs, one per line. The script will use the first one that connects successfully.</div>
                             </div>
                             <div class="inputContainer">
                                 <label class="inputLabel inputLabelUnfocused" for="JellyseerrApiKey">Jellyseerr API Key</label>
