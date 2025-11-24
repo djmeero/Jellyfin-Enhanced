@@ -2,20 +2,20 @@
   {
     "name": "Netflix Enhanced",
     "guid": "f69e946a-4b3c-4e9a-8f0a-8d7c1b2c4d9b",
-    "description": "A combination of the Netflix Enhanced and Netflix Elsewhere userscripts, providing a comprehensive set of tweaks and features for Netflix.",
-    "overview": "Netflix Enhanced and Netflix Elsewhere for a better Netflix experience.",
+    "overview": "App Enhancements for a better app experience.",
+    "description": "Better app experience.",
     "owner": "djmeero",
     "category": "General",
     "imageUrl": "https://raw.githubusercontent.com/djmeero/Jellyfin-Enhanced/master/images/icon.png",
     "versions": [
       {
         "changelog": "Custom",
-        "targetAbi": "10.10.7.0",
+        "targetAbi": "10.11.0.0",
         "version": "9.6.0.0",
-        "sourceUrl": "https://github.com/djmeero/Jellyfin-Enhanced/releases/download/9.6.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.10.7.zip",
-        "checksum": "7525A51EB18E7D5B4437ECE3B8EF3552",
-        "timestamp": "2025-11-23T17:50:19"
-      },
+        "sourceUrl": "https://github.com/djmeero/Jellyfin-Enhanced/releases/download/9.6.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "checksum": "809AF021A9FF694B90F932B32D65A785",
+        "timestamp": "2025-11-23T17:50:12"
+      }
     ]
   }
 ]
