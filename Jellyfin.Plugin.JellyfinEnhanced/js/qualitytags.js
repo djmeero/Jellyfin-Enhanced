@@ -875,4 +875,3 @@
     };
 
 })(window.JellyfinEnhanced);
-

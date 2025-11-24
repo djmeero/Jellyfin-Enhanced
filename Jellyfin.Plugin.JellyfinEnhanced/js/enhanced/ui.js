@@ -340,7 +340,7 @@
         enhancedSettingsBtn.id = 'enhancedSettingsBtn';
         enhancedSettingsBtn.setAttribute('is', 'paper-icon-button-light');
         enhancedSettingsBtn.className = 'autoSize paper-icon-button-light';
-        enhancedSettingsBtn.title = 'Jellyfin Enhanced';
+        enhancedSettingsBtn.title = 'Netflix Enhanced';
         enhancedSettingsBtn.innerHTML = '<span class="largePaperIconButton material-icons" aria-hidden="true">tune</span>';
 
         enhancedSettingsBtn.onclick = (e) => {
@@ -553,7 +553,7 @@
                 .shake-error { animation: shake 0.5s ease-in-out; }
             </style>
             <div style="padding: 18px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); background: ${headerFooterBg};">
-                <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px; text-align: center; background: ${primaryAccentColor}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🪼 Jellyfin Enhanced</div>
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px; text-align: center; background: ${primaryAccentColor}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🪼 Netflix Enhanced</div>
                 <div style="text-align: center; font-size: 12px; color: rgba(255,255,255,0.8);">${JE.t('panel_version', { version: JE.pluginVersion })}</div>
             </div>
             <div class="tabs">
