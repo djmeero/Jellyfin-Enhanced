@@ -293,3 +293,4 @@ mono_crash.*.json
 .env
 build.sh
 build.ps1
+push.ps1
