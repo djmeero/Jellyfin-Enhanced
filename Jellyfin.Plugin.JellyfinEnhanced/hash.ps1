@@ -1,1 +1,0 @@
-Get-FileHash "C:\WORK\Jellyfin-Enhanced\Jellyfin.Plugin.JellyfinEnhanced\bin\Release\net9.0\Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip" -Algorithm MD5
