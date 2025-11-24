@@ -193,7 +193,7 @@
             if (JE.isVideoPage()) {
                 JE.addOsdSettingsButton();
                 JE.initializeAutoSkipObserver();
-                JE.applySavedStylesWhenReady();
+                
             } else {
                 JE.stopAutoSkip();
             }
@@ -234,7 +234,6 @@
 
             JE.state.isContinueWatchingContext = false;
             JE.state.currentContextItemId = null;
-
             // Primary: Check for data-positionticks attribute
             // This indicates the item has playback progress and should be in Continue Watching
             const card = itemElement.closest('.card');
@@ -347,7 +346,6 @@
         // Initial UI setup
         JE.injectGlobalStyles();
         JE.addPluginMenuButton();
-        JE.applySavedStylesWhenReady();
 
         // Setup persistent listeners and observers
         setupDOMObserver();
