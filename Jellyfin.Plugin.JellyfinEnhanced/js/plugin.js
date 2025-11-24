@@ -393,7 +393,7 @@
             // Stage 3: Load ALL component scripts
             const basePath = '/JellyfinEnhanced/js';
             const allComponentScripts = [
-                'enhanced/config.js', 'enhanced/themer.js', 'enhanced/subtitles.js', 'enhanced/ui.js',
+                'enhanced/config.js', 'enhanced/themer.js', 'enhanced/ui.js',
                 'enhanced/playback.js', 'enhanced/features.js', 'enhanced/events.js',
                 'migrate.js',
                 'elsewhere.js',
