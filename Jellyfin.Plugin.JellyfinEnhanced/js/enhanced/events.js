@@ -345,7 +345,6 @@
 
         // Initial UI setup
         JE.injectGlobalStyles();
-        JE.addPluginMenuButton();
 
         // Setup persistent listeners and observers
         setupDOMObserver();
