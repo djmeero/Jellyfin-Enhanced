@@ -678,8 +678,8 @@
             icon = document.createElement('img');
             icon.id = 'jellyseerr-search-icon';
             icon.className = 'jellyseerr-icon';
-            icon.src = 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/jellyseerr.svg';
-            icon.alt = 'Jellyseerr';
+            icon.src = 'https://cdn.jsdelivr.net/gh/selfhst/icons/svg/netflix.svg';
+            icon.alt = 'Discover';
 
             let tapCount = 0;
             let tapTimer = null;
@@ -1015,7 +1015,7 @@
                        title="${useMoreInfoModal ? titleText : (jellyfinHref ? titleText : (jellyseerrUrl ? (JE.t('jellyseerr_card_view_on_jellyseerr') || 'View on Jellyseerr') : titleText))}"><bdi>${titleText}</bdi></a>
                 </div>
                 <div class="cardText cardTextCentered cardText-secondary jellyseerr-meta">
-                    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/jellyseerr.svg" class="jellyseerr-icon-on-card" alt="Jellyseerr"/>
+                    <img src="#" class="jellyseerr-icon-on-card" alt="Discovery"/>
                     <bdi>${year}</bdi>
                     <div class="jellyseerr-rating">${icons.star}<span>${rating}</span></div>
                 </div>
