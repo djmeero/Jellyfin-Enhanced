@@ -20,10 +20,10 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Restore
-        run: dotnet restore Jellyfin.Plugin.JellyfinEnhanced/Jellyfin.Plugin.JellyfinEnhanced.csproj
+        run: dotnet restore Jellyfin.Plugin.JellyfinEnhanced/JellyfinEnhanced.csproj
 
       - name: Build plugin
-        run: dotnet build Jellyfin.Plugin.JellyfinEnhanced/Jellyfin.Plugin.JellyfinEnhanced.csproj -c Release --no-restore
+        run: dotnet build Jellyfin.Plugin.JellyfinEnhanced/JellyfinEnhanced.csproj -c Release --no-restore
 
       - name: Package plugin
         run: |
