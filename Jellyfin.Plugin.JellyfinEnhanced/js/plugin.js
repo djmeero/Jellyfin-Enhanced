@@ -160,7 +160,7 @@
      * @returns {Promise<object>} A promise that resolves to the translations object.
      */
     async function loadTranslations() {
-        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
+        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/djmeero/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
         const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
         try {
