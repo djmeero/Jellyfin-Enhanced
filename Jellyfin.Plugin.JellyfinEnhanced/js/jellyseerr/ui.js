@@ -679,7 +679,7 @@
             icon.id = 'jellyseerr-search-icon';
             icon.className = 'jellyseerr-icon';
             icon.src = 'https://cdn.jsdelivr.net/gh/n00bcodr/jellyfish/logos/favicon.ico';
-            icon.alt = 'Jellyseerr';
+            icon.alt = 'Discovery';
 
             let tapCount = 0;
             let tapTimer = null;
@@ -1024,7 +1024,7 @@
                        title="${jellyfinHref ? titleText : (useMoreInfoModal ? titleText : (jellyseerrUrl ? (JE.t('jellyseerr_card_view_on_jellyseerr') || 'View on Jellyseerr') : titleText))}"><bdi>${titleText}</bdi></a>
                 </div>
                 <div class="cardText cardTextCentered cardText-secondary jellyseerr-meta">
-                    <img src="https://cdn.jsdelivr.net/gh/n00bcodr/jellyfish/logos/favicon.ico" class="jellyseerr-icon-on-card" alt="Jellyseerr"/>
+                    <img src="#" class="jellyseerr-icon-on-card" alt=" "/>
                     <bdi>${year}</bdi>
                     <div class="jellyseerr-rating">${icons.star}<span>${rating}</span></div>
                 </div>
