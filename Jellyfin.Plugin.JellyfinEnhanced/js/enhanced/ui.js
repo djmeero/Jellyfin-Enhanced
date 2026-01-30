@@ -70,7 +70,7 @@
             if (!response.ok) throw new Error('Failed to fetch release data');
             release = await response.json();
         } catch (error) {
-            console.error('🪼 Jellyfin Enhanced: Failed to fetch release notes:', error);
+            console.error('🪼 : Failed to fetch release notes:', error);
             JE.toast(JE.icon(JE.IconName.ERROR) + ' Could not load release notes.');
             return;
         }
@@ -329,7 +329,7 @@
     };
 
     /**
-     * Adds the "Jellyfin Enhanced" menu button to the sidebar.
+     * Adds the "" menu button to the sidebar.
      */
     JE.addPluginMenuButton = () => {
         const addMenuButton = (sidebar) => {
@@ -338,7 +338,7 @@
             if (!jellyfinEnhancedSection) {
                 jellyfinEnhancedSection = document.createElement('div');
                 jellyfinEnhancedSection.className = 'jellyfinEnhancedSection';
-                jellyfinEnhancedSection.innerHTML = '<h3 class="sidebarHeader">Jellyfin Enhanced</h3>';
+                jellyfinEnhancedSection.innerHTML = '<h3 class="sidebarHeader">Netflix Enhanced</h3>';
 
                 // Insert just above Media section
                 const mediaSection = sidebar.querySelector('.libraryMenuOptions');
@@ -393,7 +393,7 @@
         enhancedSettingsBtn.id = 'enhancedSettingsBtn';
         enhancedSettingsBtn.setAttribute('is', 'paper-icon-button-light');
         enhancedSettingsBtn.className = 'autoSize paper-icon-button-light';
-        enhancedSettingsBtn.title = 'Jellyfin Enhanced';
+        enhancedSettingsBtn.title = 'Netflix Enhanced';
         enhancedSettingsBtn.innerHTML = '<span class="largePaperIconButton material-icons" aria-hidden="true">tune</span>';
 
         enhancedSettingsBtn.onclick = (e) => {
@@ -431,7 +431,7 @@
                 <div class="listItem">
                     <span class="material-icons listItemIcon listItemIcon-transparent tune" aria-hidden="true"></span>
                     <div class="listItemBody">
-                        <div class="listItemBodyText">Advanced Settings (Jellyfin Enhanced)</div>
+                        <div class="listItemBodyText">Advanced Settings (Netflix Enhanced)</div>
                     </div>
                 </div>
             `;
@@ -645,7 +645,7 @@
                 .shake-error { animation: shake 0.5s ease-in-out; }
             </style>
             <div style="padding: 18px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); background: ${headerFooterBg};">
-                <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px; text-align: center; background: ${primaryAccentColor}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">${JE.icon(JE.IconName.JELLYFISH)} Jellyfin Enhanced</div>
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px; text-align: center; background: ${primaryAccentColor}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">${JE.icon(JE.IconName.JELLYFISH)} Netflix Enhanced</div>
                 <div style="text-align: center; font-size: 12px; color: rgba(255,255,255,0.8);">${JE.t('panel_version', { version: JE.pluginVersion })}</div>
             </div>
             <div class="tabs">
