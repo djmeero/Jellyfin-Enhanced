@@ -1,0 +1,38 @@
+name: Build Jellyfin Plugin
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore
+        run: dotnet restore Jellyfin.Plugin.JellyfinEnhanced/JellyfinEnhanced.csproj
+
+      - name: Build plugin
+        run: dotnet build Jellyfin.Plugin.JellyfinEnhanced/JellyfinEnhanced.csproj -c Release --no-restore
+
+      - name: Package plugin
+        run: |
+          mkdir output
+          copy Jellyfin.Plugin.JellyfinEnhanced\bin\Release\net9.0\*.dll output\
+          powershell Compress-Archive -Path output\* -DestinationPath Jellyfin-Enhanced.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Jellyfin-Enhanced
+          path: Jellyfin-Enhanced.zip
