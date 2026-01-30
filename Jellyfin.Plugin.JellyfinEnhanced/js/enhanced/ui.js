@@ -4,7 +4,7 @@
 (function(JE) {
     'use strict';
 
-    const GITHUB_REPO = 'n00bcodr/Jellyfin-Enhanced';
+    const GITHUB_REPO = 'djmeero/Jellyfin-Enhanced';
 
     /**
      * Helper function to determine if the current page is the video player.
@@ -1281,7 +1281,7 @@
 
             // Populate language options from Jellyfin's cultures
             (async () => {
-                const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
+                const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/djmeero/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
                 const AVAILABLE_LANGUAGES_CACHE_KEY = 'JE_available_languages';
                 const AVAILABLE_LANGUAGES_CACHE_TS_KEY = 'JE_available_languages_ts';
                 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
@@ -1398,7 +1398,7 @@
                 let translationExists = true;
                 if (newLang) {
                     try {
-                        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
+                        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/djmeero/Jellyfin-Enhanced/main/Jellyfin.Plugin.JellyfinEnhanced/js/locales';
                         const response = await fetch(`${GITHUB_RAW_BASE}/${newLang}.json`, { method: 'HEAD' });
                         translationExists = response.ok;
                     } catch (err) {
